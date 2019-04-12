@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, inital-scale=1">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<style> 
+ .myslides { display: none; }
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  padding: 30px 45px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.footer {
+position:fixed;
+left:0;
+padding:10px 0;
+background-color:#101010;
+text-align:center;
+color:#9d9d9d;
+bottom: 0;
+width:100%; }
+ </style> </head>
+<body>
+<div id="google_translate"></div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="copy.html">Lifestyle Store</a>
+    </div>
+ </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="pratice.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+</div></nav>
+ <div class="slides">
+<img class="myslides" src="intro-bg_1.jpg" style="width:100%">
+ <a href="postloginform.html" button class="btn">Shop Now</a>
+<div class="footer">
+<p>Copyright &copy; Lifestyle Store.All rights Reserved  Conatact us: +91 90000 00000</p>
+</div>
+
+<script>
+ var myindex=0;
+ fun();
+function fun() {
+ var i;
+var x = document.getElementsByClassName("myslides");
+for( i=0; i<x.length;i++) {
+x[i].style.display="none" ; }
+
+myindex++;
+if(myindex> x.length) {
+myindex=1; }
+x[myindex-1].style.display="block";
+setTimeout(fun,5000);
+}
+</script>
+ <script type="text/javascript">
+ function googleTranslateElementInit() {
+ new google.translate.TranslateElement({pageLangauage: 'en' },'google_translate'); }
+</script>
+<script type="text/javascript"
+ src="//translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+</body></html>
